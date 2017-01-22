@@ -2,6 +2,7 @@
 	<dmetric>1200.0,1824.0</dmetric>
 	<Profile sr="prof19" ve="2">
 		<cdate>1484893901816</cdate>
+		<clp>true</clp>
 		<edate>1484973883390</edate>
 		<id>19</id>
 		<mid0>6</mid0>
@@ -32,8 +33,7 @@
 	</Profile>
 	<Profile sr="prof7" ve="2">
 		<cdate>1484893901804</cdate>
-		<clp>true</clp>
-		<edate>1484969754194</edate>
+		<edate>1485096255079</edate>
 		<id>7</id>
 		<mid0>3</mid0>
 		<nme>AutoVoiceRec a "Device" and "Action" AV_BRIDGE</nme>
@@ -58,6 +58,8 @@
 					<Precision-type>java.lang.String</Precision-type>
 					<ProfileName>&lt;null&gt;</ProfileName>
 					<ProfileName-type>java.lang.String</ProfileName-type>
+					<Responses>&lt;null&gt;</Responses>
+					<Responses-type>java.lang.String</Responses-type>
 					<Source>&lt;null&gt;</Source>
 					<Source-type>java.lang.String</Source-type>
 					<Substitutions>%Corrections</Substitutions>
@@ -72,10 +74,12 @@
 					<VariableNames-type>java.lang.String</VariableNames-type>
 					<VariableValues>&lt;null&gt;</VariableValues>
 					<VariableValues-type>java.lang.String</VariableValues-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Command: "^.*\b%actionregex\b.*\b%deviceregex\b.*|^.*\b%deviceregex\b.*\b%actionregex\b.* (regex)"
+					<com.twofortyfouram.locale.intent.extra.BLURB>Command: "^.*\b(%actionregex)\b.*\b(%deviceregex)\b.*|^.*\b(%deviceregex)\b.*\b(%actionregex)\b.* (regex)"
 Replacements: %Corrections</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<configcommand>^.*\b%ActionRegex\b.*\b%DeviceRegex\b.*|^.*\b%DeviceRegex\b.*\b%ActionRegex\b.*</configcommand>
+					<config_easy_commands>&lt;null&gt;</config_easy_commands>
+					<config_easy_commands-type>java.lang.String</config_easy_commands-type>
+					<configcommand>^.*\b(%ActionRegex)\b.*\b(%DeviceRegex)\b.*|^.*\b(%DeviceRegex)\b.*\b(%ActionRegex)\b.*</configcommand>
 					<configcommand-type>java.lang.String</configcommand-type>
 					<configcommandid>&lt;null&gt;</configcommandid>
 					<configcommandid-type>java.lang.String</configcommandid-type>
@@ -89,6 +93,24 @@ Replacements: %Corrections</com.twofortyfouram.locale.intent.extra.BLURB>
 					<configregexsub-type>java.lang.Boolean</configregexsub-type>
 					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>true</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED>
 					<net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>java.lang.Boolean</net.dinglisch.android.tasker.EXTRA_NSR_DEPRECATED-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%avcomm
+First recognized Command
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%avcommnofilter
+First Command Without Filter
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%avcomms()
+All recognized commands
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%avcommsnofilter()
+All recognized commands without filter
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%avsource
+Source of the Voice Command
+Can be normal, continuous, test or googlenow&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%avword()
+Word Array
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%regexgroups()
+Regex Groups
+Regex Groups&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%regexmatch
+Regex Match
+Regex Match&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>configcommand Substitutions plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
@@ -121,15 +143,15 @@ Replacements: %Corrections</com.twofortyfouram.locale.intent.extra.BLURB>
 	<Project sr="proj0" ve="2">
 		<cdate>1436320965950</cdate>
 		<name>Voice For IOT BRIDGE</name>
-		<pids>9,7,19,2</pids>
+		<pids>7,9,19,2</pids>
 		<scenes>STATUS OF BRIDGE</scenes>
-		<tids>6,10,3,5,11,12,4</tids>
+		<tids>4,3,12,10,6,11,5</tids>
 		<Kid sr="Kid">
 			<launchID>5</launchID>
 			<pkg>com.voiceforiot.avbridge</pkg>
 			<vMin>19</vMin>
-			<vnme>1.0.4</vnme>
-			<vnum>15</vnum>
+			<vnme>1.0.5</vnme>
+			<vnum>16</vnum>
 		</Kid>
 		<Img sr="icon" ve="2">
 			<uri>content://com.android.externalstorage.documents/document/primary%3ATasker%2F.icn%2FBridgeIcon.png</uri>
@@ -362,7 +384,7 @@ Replacements: %Corrections</com.twofortyfouram.locale.intent.extra.BLURB>
 	</Task>
 	<Task sr="task3">
 		<cdate>1430019519712</cdate>
-		<edate>1484972841369</edate>
+		<edate>1485041968145</edate>
 		<id>3</id>
 		<nme>AV_BRIDGE AV COMMAND MATCHED</nme>
 		<pri>100</pri>
